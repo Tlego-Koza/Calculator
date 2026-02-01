@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="4"><input type="text" id="inputBox" value="0" readonly /></td>
+    </tr>
+    <tr>
+      <td class="digit-button" onclick="digitBtnPressed(7)">7</td>
+      <td class="digit-button" onclick="digitBtnPressed(8)">8</td>
+      <td class="digit-button" onclick="digitBtnPressed(9)">9</td>
+      <td class="operator-button" onclick="operatorBtnPressed('*')">×</td>
+    </tr>
+    <tr>
+      <td class="digit-button" onclick="digitBtnPressed(4)">4</td>
+      <td class="digit-button" onclick="digitBtnPressed(5)">5</td>
+      <td class="digit-button" onclick="digitBtnPressed(6)">6</td>
+      <td class="operator-button" onclick="operatorBtnPressed('-')">−</td>
+    </tr>
+    <tr>
+      <td class="digit-button" onclick="digitBtnPressed(1)">1</td>
+      <td class="digit-button" onclick="digitBtnPressed(2)">2</td>
+      <td class="digit-button" onclick="digitBtnPressed(3)">3</td>
+      <td class="operator-button" onclick="operatorBtnPressed('+')">+</td>
+    </tr>
+    <tr>
+      <td class="digit-button" colspan="2" onclick="digitBtnPressed(0)">0</td>
+      <td class="ac-button" onclick="btnACPressed()">AC</td>
+      <td class="operator-button" onclick="operatorBtnPressed('/')">÷</td>
+    </tr>
+    <tr>
+      <td class="operator-button" colspan="4" onclick="equalsBtnPressed()">=</td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
